@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+body {
+  background-color: rgb(0, 98, 128);
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.container {
+  padding: 2.5%;
+  margin: 0 auto;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 54px;
+}
+
+.card {
+  list-style: none;
+  padding: 40px;
+  border-radius: 5px;
+  background-color: rgba(244, 244, 244, 0.5);
+  color: #222;
+  text-align: center;
+}
+
+.card-title {
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.card-subtitle {
+  font-weight: lighter;
+  color: #666;
+  margin-top: 5px;
+}
+
+.card-image {
+  height: 100px;
+}
+
+#pokedex {
+  padding-inline-start: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 20px;
+}
+
+.card:hover {
+  animation: bounce 0.5s linear;
+}
+
+@keyframes bounce {
+  20% {
+    transform: translateY(-6px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+  60% {
+    transform: translateY(-2px);
+  }
+  80% {
+    transform: translateY(-0px);
+  }
+}
